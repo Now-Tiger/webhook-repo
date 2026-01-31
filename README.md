@@ -2,6 +2,8 @@
 
 Flask application that receives GitHub webhook events and displays them in a UI.
 
+![image](./public/GithubActionLogs.png)
+
 ## Features
 
 - Receives GitHub webhooks for Push, Pull Request, and Merge events
@@ -117,6 +119,10 @@ docker exec -it webhook-repo-mongo-1 mongosh
 use github_webhooks
 db.events.find().pretty()
 ```
+
+## Database Logs
+
+![image](./public/DBLogs.png)
 
 ## Project Structure
 
